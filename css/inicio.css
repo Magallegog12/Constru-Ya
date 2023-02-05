@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorTextos: black;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(219, 27%, 88%, 0.527), hsla(224, 15%, 53%, 0.534)), url(../img/fondo.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(219, 27%, 88%, 0.527), hsla(224, 15%, 53%, 0.534)), url(../img/fondo.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center center;
+    background-size: auto auto;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo {
+    color: rgb(56, 56, 146);
+    text-align: center;
+    font-size: 40px;
+}
+
+.empresa {
+    position: absolute;
+    left: 70px;
+    font-size: 60px;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+nav>a.inicio {
+    border: 2px black solid;
+    padding: 8px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+.contenido-texto-bienvenido {
+    width: 40%;
+    line-height: 30px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 252);
+    border: 2px black solid;
+}
+
+.contenido-texto-bienvenido h3 {
+    margin: 7px 7px 7px 7px;
+}
+
+.contenido-texto-bienvenido p {
+    text-align: justify;
+    margin: 7px 7px 7px 7px;
+}
+
+main aside {
+    line-height: 45px;
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 252);
+    box-shadow: 0 0 6px 0 rgb(206, 206, 252, 0.8);
+    font-size: 20px;
+}
+
+main .login {
+    margin: 7px;
+}
+
+.grupo {
+    margin: 0 auto;
+}
+
+input.in {
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    margin-bottom: -30px;
+    top: 50px;
+}
+
+input:focus {
+    outline: none;
+    color: #5e5d5d;
+}
+
+.barra {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #4286f4, #373B44);
+    transition: 0.3s ease width;
+    left: 22px;
+    bottom: 8px;
+}
+
+input:focus~.barra::before {
+    width: 350px;
+}
+
+.btn {
+    font-family: 'Unbounded', cursive;
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(216, 222, 233), rgb(117, 127, 153));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgb(216, 222, 233), rgb(117, 127, 153));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 17px auto;
+    cursor: pointer;
+}
+
+footer {
+    height: auto;
+    margin-top: -70px;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contenedor-footer h4 {
+    text-decoration: underline;
+}
+
+footer h2 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.text-f {
+    margin-top: -250px;
+    height: auto;
+}
+
+footer .content-foo {
+    margin-top: 50px;
+}
+
+.contacto {
+    line-height: 80px;
+    margin-top: -30px;
+}
+
+footer .contact-me {
+    display: flex;
+    justify-content: space-around;
+    min-width: 350px;
+}
+
+.contact-me>a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(56, 56, 146);
+}
+
+.contact-me h4 {
+    text-align: center;
+}
+
+aside {
+    border: 2px solid black;
+}
+
+@media screen and (max-width:500px) {
+    .form {
+        width: 80%;
+    }
+}
