@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(219, 27%, 88%, 0.527), hsla(224, 15%, 53%, 0.534)), url(../img/fondo.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(219, 27%, 88%, 0.527), hsla(224, 15%, 53%, 0.534)), url(../img/fondo.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center center;
+    background-size: auto auto;
+    background-attachment: fixed;
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+.textos-header{
+    
+}
+.empresa {
+    position: absolute;
+    left: 70px;
+    font-size: 60px;
+}
+header nav {
+    text-align: right;
+    padding: 20px 15px 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header nav>a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+header nav>a.inicio {
+    border: 2px black solid;
+    padding: 8px;
+}
+
+header nav>a:hover {
+    text-decoration: underline;
+}
+
