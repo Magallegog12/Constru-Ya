@@ -23,7 +23,7 @@ body {
 }
 
 .contenedor {
-    padding: 60px 0;
+    padding: 40px 0;
     width: 100%;
     max-width: 80%;
     margin: auto;
@@ -36,6 +36,7 @@ body {
     color: rgb(56, 56, 146);
     text-align: center;
     font-size: 40px;
+    margin-top: 20px;
 }
 
 .empresa {
@@ -46,18 +47,13 @@ body {
 
 nav {
     text-align: right;
-    padding: 30px 50px 0 0;
+    padding: 30px 10px 0 0;
     width: 100%;
 }
 
 nav>a {
     margin-left: 10px;
     text-decoration: none;
-}
-
-nav>a.inicio {
-    border: 2px black solid;
-    padding: 8px;
 }
 
 nav>a:hover {
@@ -67,7 +63,7 @@ nav>a:hover {
 .contenido-texto-bienvenido {
     width: 40%;
     line-height: 30px;
-    height: 500px;
+    height: auto;
     border-radius: 10px;
     background-color: rgb(206, 206, 252);
     border: 2px black solid;
@@ -84,7 +80,9 @@ nav>a:hover {
 
 main aside {
     line-height: 45px;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -164,38 +162,41 @@ footer {
 
 .contenedor-footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     line-height: 30px;
     text-align: center;
 }
-
+.info-f{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .contenedor-footer h4 {
     text-decoration: underline;
 }
 
 footer h2 {
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
 }
 
 .text-f {
-    margin-top: -250px;
+    margin-top: 10px;
     height: auto;
 }
 
 footer .content-foo {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .contacto {
     line-height: 80px;
-    margin-top: -30px;
 }
 
 footer .contact-me {
     display: flex;
     justify-content: space-around;
-    min-width: 350px;
 }
 
 .contact-me>a {
@@ -220,7 +221,109 @@ aside {
 
 @media screen and (max-width:900px){
     .textos-header{
-        display: grid;
-        place-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .empresa{
+        left: 20px;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .contact-me{
+        align-items: center;
+    }
+    .info-f{
+        display: flex;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .contenido-texto-bienvenido {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width:700px){
+    .info-f{
+        flex-direction: column;
+    }
+    .content-foo{
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width:650px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width:510px){
+    .empresa{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:450px){
+    input.in{
+        width: 280px;
+
+    }
+    input:focus~.barra::before {
+        width: 280px;
+    }
+}
+@media screen and (max-width:420px){
+    .empresa{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:380px){
+    .empresa{
+        font-size: 40px;
+        left: 0;
+    }
+    input.in{
+        width: 180px;
+
+    }
+    input:focus~.barra::before {
+        width: 210px;
+    }
+}
+@media screen and (max-width:350px){
+    .contact-me{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:340px){
+    .empresa{
+        font-size: 40px;
+        left: 5px;
+    }
+    .titulo{
+        font-size: 30px ;
+    }
+}
+@media screen and (max-width:330px){
+    .empresa{
+        font-size: 30px;
+        left: 5px;
+    }    
+}
+@media screen and (max-width:250px){
+    input.in{
+        width: 150px;
+
+    }
+    input:focus~.barra::before {
+        width: 150px;
     } 
 }
